@@ -1,0 +1,6 @@
+def DominoPiling(arr):
+    numOfDomino = (arr[0] * arr[1]) // 2
+    return numOfDomino
+
+arr =list(map(int , input().rstrip().split()))
+DominoPiling(arr)
