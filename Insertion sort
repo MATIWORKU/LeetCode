@@ -1,0 +1,10 @@
+def insertionSort1(n, arr):
+    # Write your code here
+    temp = arr[n - 1]
+    index = n - 2
+    while temp < arr[index] and index >= 0:
+        arr[index + 1] = arr[index]
+        print(" ".join(map(str, arr)))
+        index -= 1
+    arr[index + 1] = temp
+    print(" ".join(map(str, arr)))
